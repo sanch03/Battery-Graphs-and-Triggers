@@ -57,3 +57,8 @@ C:\Users\sanch\source\repos\battery-monitor\Battery Monitor\bin\Debug\LiveCharts
 C:\Users\sanch\source\repos\battery-monitor\Battery Monitor\bin\Debug\LiveCharts.xml
 C:\Users\sanch\source\repos\battery-monitor\Battery Monitor\bin\Debug\LiveCharts.Wpf.pdb
 C:\Users\sanch\source\repos\battery-monitor\Battery Monitor\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor\bin\Debug\Newtonsoft.Json.dll
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor\bin\Debug\Newtonsoft.Json.xml
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor\obj\Debug\Settings.g.cs
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor\obj\Debug\Settings.baml

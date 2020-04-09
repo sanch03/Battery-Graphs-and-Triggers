@@ -20,6 +20,8 @@ namespace Battery_Monitor
         private bool _isExit;
         protected override void OnStartup(StartupEventArgs e)
         {
+
+           
             string str = PowerManager.RemainingChargePercent.ToString();
             Font fontToUse = new Font("Microsoft Sans Serif", 16, System.Drawing.FontStyle.Regular, GraphicsUnit.Pixel);
             Brush brushToUse = new SolidBrush(Color.White);
@@ -95,6 +97,7 @@ namespace Battery_Monitor
             {
                 MainWindow.Show();
                 MainWindow.Activate();
+                
             }
         }
 
