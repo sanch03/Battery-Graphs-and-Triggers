@@ -67,7 +67,7 @@ namespace Battery_Monitor
             lis.matrix.Add(new List<int>());
             lis.matrix[count].Add(secondsSinceEpoch);
             lis.matrix[count].Add(PowerManager.RemainingChargePercent);
-            int time;
+
             
             //if (SystemInformation.PowerStatus.BatteryChargeStatus = 8)
             lis.final = secondsSinceEpoch+SystemInformation.PowerStatus.BatteryLifeRemaining;
