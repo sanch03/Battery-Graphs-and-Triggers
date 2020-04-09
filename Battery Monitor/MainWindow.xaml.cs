@@ -16,6 +16,10 @@ using System.Windows.Shapes;
 using System.Windows.Threading;
 using Windows.System.Power;
 using Windows.Graphics.Display;
+using LiveCharts;
+using LiveCharts.Configurations;
+using LiveCharts.Wpf;
+using LiveCharts.Defaults;
 
 namespace Battery_Monitor
 {
@@ -24,21 +28,108 @@ namespace Battery_Monitor
     /// </summary>
     public partial class MainWindow : Window
     {
-               
-                public MainWindow()
+        static class lis
         {
-           
-            InitializeComponent();
+            public static List<List<int>> matrix = new List<List<int>>();
+            public static int final;
+        }
+        public MainWindow()
+        {
+        InitializeComponent();
+            lis.matrix.Clear();
+            addtolist();
+
+            test();
+
+
+
+
+
+
             Vis.counter = 0;
             PowerManager.RemainingChargePercentChanged += PowerManager_RemainingChargePercentChanged;
+
+
             
+
+
         }
+
+
+        void addtolist()
+        {
+            TimeSpan t = DateTime.UtcNow - new DateTime(1970, 1, 1);
+            int secondsSinceEpoch = (int)t.TotalSeconds;
+
+            int count = lis.matrix.Count;
+            //System.Windows.MessageBox.Show(PowerManager.);
+            
+            lis.matrix.Add(new List<int>());
+            lis.matrix[count].Add(secondsSinceEpoch);
+            lis.matrix[count].Add(PowerManager.RemainingChargePercent);
+            int time;
+            
+            //if (SystemInformation.PowerStatus.BatteryChargeStatus = 8)
+            lis.final = secondsSinceEpoch+SystemInformation.PowerStatus.BatteryLifeRemaining;
+        }
+
+        void test()
+        {
+
+            // Container.LogList.Add
+            SeriesCollection Series = new SeriesCollection
+            {
+                new LineSeries
+                {
+                    Title = "Series 1",
+                    Values = new ChartValues<ObservablePoint>() {
+
+ },
+                    PointGeometry = null
+
+                },
+
+                new LineSeries
+                {
+                    Title = "Estimate",
+                    Values = new ChartValues<ObservablePoint>() {
+
+ },
+                    Fill = System.Windows.Media.Brushes.Transparent,
+                    Stroke = System.Windows.Media.Brushes.Gray,
+                    StrokeDashArray = new DoubleCollection { 2 },
+                    PointGeometry = null
+
+                }
+
+            };
+            for (int i = 0; i < lis.matrix.Count; i++)
+            {
+                int x = lis.matrix[i][0];
+                int y = lis.matrix[i][1];
+                Series[0].Values.Add(new ObservablePoint(x, y));
+                System.Diagnostics.Debug.WriteLine("x" + i.ToString() + "=" + x.ToString() + " y" + i.ToString() + "=" + y.ToString());
+            }
+            
+            Series[1].Values.Add(new ObservablePoint(lis.matrix[lis.matrix.Count-1][0], lis.matrix[lis.matrix.Count-1][1]));
+            Series[1].Values.Add(new ObservablePoint(lis.final, 0));
+
+            //modifying any series values will also animate and update the chart
+            //Series[3].Values.Add(5d);
+
+            //DataContext = this;
+
+            RankGraph.Series = Series;
+
+        }
+
                 static class Vis
         {
             public static int counter;
         }
              private void Window_Loaded(object sender, EventArgs e)
         {
+            powerrefresh();
             Vis.counter = 0;
            // System.Windows.MessageBox.Show("Start");
             PowerStatus status = SystemInformation.PowerStatus;
@@ -48,11 +139,16 @@ namespace Battery_Monitor
             this.Left = desktopWorkingArea.Right - this.Width;
             this.Top = desktopWorkingArea.Bottom - this.Height;
             //RefreshStatus;
-            DispatcherTimer timer = new DispatcherTimer();
-            timer.Interval = TimeSpan.FromSeconds(1);
-            timer.Tick += RefreshStatus;
-            timer.Start();
-            
+            //DispatcherTimer timer = new DispatcherTimer();
+           // timer.Interval = TimeSpan.FromSeconds(5);
+           // timer.Tick += RefreshStatus;
+           // timer.Start();
+
+
+
+
+
+
         }
         void Window_Deactivated(object sender, EventArgs e)
         {
@@ -62,12 +158,20 @@ namespace Battery_Monitor
             
         }
 
+
         void RefreshStatus(object sender, EventArgs e)
         {
-            if(Vis.counter == 1)
+            System.Diagnostics.Debug.WriteLine(lis.matrix[0][0]);
+            System.Diagnostics.Debug.WriteLine(lis.matrix[0][1]);
+            if (lis.matrix.Count > 1)
             {
-                DispatcherTimer timer = (DispatcherTimer)sender;
-                timer.Stop();
+                System.Diagnostics.Debug.WriteLine(lis.matrix[1][0]);
+                System.Diagnostics.Debug.WriteLine(lis.matrix[1][1]);
+            }
+            if (Vis.counter == 1)
+            {
+               // DispatcherTimer timer = (DispatcherTimer)sender;
+               // timer.Stop();
                // System.Windows.MessageBox.Show("Stop");
               
             }
@@ -77,19 +181,24 @@ namespace Battery_Monitor
 
         private void PowerManager_RemainingChargePercentChanged(object sender, object e)
         {
+            addtolist();
+            powerrefresh();
             // System.Windows.MessageBox.Show("hi");
-            bool c = bool.Parse("false");
-            if (IsActiveProperty.Equals(c))
-            {
-                System.Windows.MessageBox.Show("hey");
-                powerrefresh();
-            }
+           // bool c = bool.Parse("false");
+            //if (IsActiveProperty.Equals(c))
+           // {
+                //System.Windows.MessageBox.Show("hey");
+              //  powerrefresh();
+          //  }
             
  
         }
         public void powerrefresh()
         {
             PowerStatus power = SystemInformation.PowerStatus;
+            test();
+            //Series[0].Values.Add(new ObservablePoint(160, 80));
+            
 
             // Battery Remaining
             int secondsRemaining = power.BatteryLifeRemaining;
@@ -109,14 +218,33 @@ namespace Battery_Monitor
             }
             else
             {
-                timeremaining.Text = string.Empty;
+                if (PowerManager.RemainingChargePercent == 100)
+                {
+                    timeremaining.Text = "Fully Charged";
+                } else
+                {
+                    timeremaining.Text = "Charging";
+                }
             }
 
             // Battery Status
             // percentage.Text = power.BatteryChargeStatus.ToString();
 
-            percentage.Text = PowerManager.RemainingChargePercent.ToString();
+            percentage.Text = PowerManager.RemainingChargePercent.ToString()+"%";
         }
 
+        private void RichTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Window_GotFocus(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
-}
+
+    
+    }
+
+

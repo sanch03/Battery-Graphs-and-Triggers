@@ -34,7 +34,7 @@ namespace Battery_Monitor
             hIcon = (bitmapText.GetHicon());
             
             //DestroyIcon(hIcon.ToInt32);
-
+            
             base.OnStartup(e);
             MainWindow = new MainWindow();
             MainWindow.Closing += MainWindow_Closing;
@@ -103,7 +103,7 @@ namespace Battery_Monitor
             if (!_isExit)
             {
                 e.Cancel = true;
-                MainWindow.Hide(); // A hidden window can be shown again, a closed one not
+               MainWindow.Hide(); // A hidden window can be shown again, a closed one not
             }
         }
         public void test()
