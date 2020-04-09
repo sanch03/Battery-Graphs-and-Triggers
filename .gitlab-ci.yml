@@ -1,30 +1,42 @@
-####
-# Build Windows .NET Framework Applications on Linux using the mono image.
-# For docker image tags see https://store.docker.com/images/mono/plans/140b7546-967e-4e7d-b3f2-ad2102ecfc8b?tab=tags
-# -
-# Requires `Project.sln` to be in the root directory.
-####
+# This is a simple gitlab continuous integration template (compatible with the shared runner provided on gitlab.com)
+# using the official mono docker image to build a visual studio project.
+#
+# MyProject.sln
+#   MyProject\
+#     MyProject\
+#        MyProject.csproj (console application)
+#     MyProject.Test\
+#        MyProject.Test.csproj (test library using nuget packages "NUnit" and "NUnit.ConsoleRunner")
+#
+# Please find the full example project here:
+# https://gitlab.com/tobiaskoch/gitlab-ci-example-mono
 
-# Image
-image: mono:4.8.0.524
+# see https://hub.docker.com/_/mono/
+image: mono:latest
 
-# This folder is cached between builds
-# http://docs.gitlab.com/ce/ci/yaml/README.html#cache
-cache:
-  paths:
-  - ~/.local/share/NuGet/Cache
-  - ~/.nuget/packages
-
-# Stages
 stages:
-  - build
+  - test
+  - deploy
 
-# Build Artifacts
-# https://forum.gitlab.com/t/build-net-projects/1395/12
-Artifacts:
-  stage: build
+before_script:
+  - nuget restore -NonInteractive
+
+release:
+  stage: deploy
+  only:
+    - master
+  artifacts:
+    paths:
+      - build/release/MyProject.exe
   script:
-    # Restore Dependencies (NuGet)
-    - nuget restore
-    # Build Project
-    - MONO_IOMAP=case xbuild /t:Build /p:Configuration="Release" /p:Platform="Any CPU" "Battery Monitor.sln"
+    # The output path is relative to the position of the csproj-file
+    - msbuild /p:Configuration="Release" /p:Platform="Any CPU"
+      /p:OutputPath="./../../build/release/" "Battery Monitor.sln"
+    
+debug:
+  stage: test
+  script:
+    # The output path is relative to the position of the csproj-file
+    - msbuild /p:Configuration="Debug" /p:Platform="Any CPU"
+      /p:OutputPath="./../../build/debug/" "Battery Monitor.sln"
+    - mono packages/NUnit.ConsoleRunner.3.6.0/tools/nunit3-console.exe build/debug/MyProject.Test.dll
