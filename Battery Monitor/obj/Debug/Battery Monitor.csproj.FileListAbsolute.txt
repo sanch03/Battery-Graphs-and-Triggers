@@ -62,3 +62,4 @@ C:\Users\sanch\source\repos\battery-monitor\Battery Monitor\bin\Debug\Newtonsoft
 C:\Users\sanch\source\repos\battery-monitor\Battery Monitor\bin\Debug\Newtonsoft.Json.xml
 C:\Users\sanch\source\repos\battery-monitor\Battery Monitor\obj\Debug\Settings.g.cs
 C:\Users\sanch\source\repos\battery-monitor\Battery Monitor\obj\Debug\Settings.baml
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor\obj\Debug\Battery Monitor.csproj.CoreCompileInputs.cache

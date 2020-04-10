@@ -1,0 +1,22 @@
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\SplashScreen.scale-200.png
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\LockScreenLogo.scale-200.png
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square150x150Logo.scale-200.png
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square44x44Logo.scale-200.png
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square44x44Logo.targetsize-24_altform-unplated.png
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\StoreLogo.png
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Wide310x150Logo.scale-200.png
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\resources.pri
+C:\Users\sanch\source\repos\battery-monitor\packages\DocumentFormat.OpenXml.2.10.1\lib\net46\DocumentFormat.OpenXml.dll
+C:\Users\sanch\source\repos\battery-monitor\packages\FluentWPF.0.8.0\lib\net45\FluentWPF.dll
+C:\Users\sanch\source\repos\battery-monitor\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll
+C:\Users\sanch\source\repos\battery-monitor\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll
+C:\Users\sanch\source\repos\battery-monitor\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll
+C:\Users\sanch\source\repos\battery-monitor\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll
+C:\Users\sanch\source\repos\battery-monitor\packages\System.IO.Packaging.4.7.0\lib\net46\System.IO.Packaging.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETCore\v4.5\System.Runtime.WindowsRuntime.dll
+C:\Users\sanch\source\repos\battery-monitor\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.pdb
+C:\Users\sanch\source\repos\battery-monitor\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.pdb
+C:\Users\sanch\source\repos\battery-monitor\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.pdb
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor\bin\Debug\Battery Monitor.exe
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor\bin\Debug\Battery Monitor.exe.config
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor\bin\Debug\Battery Monitor.pdb

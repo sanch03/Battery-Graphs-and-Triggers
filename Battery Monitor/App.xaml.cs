@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Forms;
 using Windows.System.Power;
 
 namespace Battery_Monitor
@@ -14,7 +15,7 @@ namespace Battery_Monitor
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
-    public partial class App : Application
+    public partial class App : System.Windows.Application
     {
         private System.Windows.Forms.NotifyIcon _notifyIcon;
         private bool _isExit;
@@ -49,7 +50,53 @@ namespace Battery_Monitor
 
             CreateContextMenu();
             PowerManager.RemainingChargePercentChanged += ChargeChange;
+            tooltipchange();
 
+        }
+        void tooltipchange()
+        {
+            int th;
+            int tmin;
+            PowerStatus power = SystemInformation.PowerStatus;
+            int secondsRemaining = power.BatteryLifeRemaining;
+            if (secondsRemaining >= 0)
+            {
+
+                TimeSpan tremaining = TimeSpan.FromSeconds(secondsRemaining);
+                //   System.Windows.MessageBox.Show(tremaining.TotalHours.ToString());
+                if (tremaining.TotalHours < 1)
+                {
+                    this.Dispatcher.Invoke(() =>
+                    {
+                        _notifyIcon.Text = tremaining.Minutes + " minutes (" + PowerManager.RemainingChargePercent.ToString() + "%) remaining";
+                    });
+
+                }
+                else
+                {
+                    List<string> ttime = tremaining.TotalHours.ToString().Split('.').ToList<string>();
+                    ttime = tremaining.TotalHours.ToString().Split('.').ToList<string>();
+                    th = Int32.Parse(ttime[0]);
+                    if (ttime.Count == 2)
+                    {
+                        tmin = (int)(Convert.ToDouble("." + ttime[1]) * 60);
+                    }
+                    else
+                    {
+                        tmin = 0;
+                    }
+
+
+                    this.Dispatcher.Invoke(() =>
+                    {
+                        _notifyIcon.Text = th.ToString() + " hr " + tmin.ToString() + " min (" + PowerManager.RemainingChargePercent.ToString() + "%) remaining";
+
+                        // timeremaining.Text = string.Format("{0:00}h {1:00}m", (int)tremaining.TotalHours, tremaining.Minutes);
+                    });
+
+                }
+
+            }
         }
         public void ChargeChange(object sender, object e)
         {
@@ -66,6 +113,9 @@ namespace Battery_Monitor
             g.DrawString(str, fontToUse, brushToUse, -4, -1);
             hIcon = (bitmapText.GetHicon());
             _notifyIcon.Icon = System.Drawing.Icon.FromHandle(hIcon);
+            // _notifyIcon.Text = "ToolTipText";
+            tooltipchange();
+
         }
         public void CreateContextMenu()
         {
@@ -109,9 +159,6 @@ namespace Battery_Monitor
                MainWindow.Hide(); // A hidden window can be shown again, a closed one not
             }
         }
-        public void test()
-        {
-            MessageBox.Show("hi");
-        }
+
     }
 }

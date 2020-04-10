@@ -61,7 +61,7 @@ namespace Battery_Monitor
             PowerManager.RemainingChargePercentChanged += PowerManager_RemainingChargePercentChanged;
             PowerManager.BatteryStatusChanged += PowerManager_RemainingChargePercentChanged;
             PowerManager.EnergySaverStatusChanged += PowerManager_RemainingChargePercentChanged;
-
+           // PowerManager.RemainingDischargeTimeChanged += PowerManager_RemainingDischargeTimeChanged;
 
 
 
@@ -151,7 +151,7 @@ namespace Battery_Monitor
                 int x = lis.matrix[i][0];
                 int y = lis.matrix[i][1];
                 graph.Series[0].Values.Add(new ObservablePoint(x, y));
-                System.Diagnostics.Debug.WriteLine("x" + i.ToString() + "=" + x.ToString() + " y" + i.ToString() + "=" + y.ToString());
+                //System.Diagnostics.Debug.WriteLine("x" + i.ToString() + "=" + x.ToString() + " y" + i.ToString() + "=" + y.ToString());
             }
             List<string> powerval3 = SystemInformation.PowerStatus.BatteryChargeStatus.ToString().Split(',').ToList<string>();
                 graph.Series[1].Values.Add(new ObservablePoint(lis.matrix[lis.matrix.Count - 1][0], lis.matrix[lis.matrix.Count - 1][1]));
@@ -238,23 +238,97 @@ namespace Battery_Monitor
             
  
         }
+
+
         public void powerrefresh()
         {
             System.Diagnostics.Debug.WriteLine("power-ref");
-           
+
 
 
             PowerStatus power = SystemInformation.PowerStatus;
             test();
             //Series[0].Values.Add(new ObservablePoint(160, 80));
-            
+
             //System.Windows.MessageBox.Show(power.PowerLineStatus.ToString());
 
             // Battery Remaining
+            int th;
+            int tmin;
+            string hval;
+            string tval;
+
+            TimeSpan tsince = TimeSpan.FromSeconds(lis.matrix[lis.matrix.Count - 1][0] - lis.matrix[0][0]);
+            List<string> ttime = tsince.TotalHours.ToString().Split('.').ToList<string>();
+
+            if (tsince.TotalHours < 1)
+            {
+                this.Dispatcher.Invoke(() =>
+                {
+                    timesince.Text = tsince.Minutes + " minutes ago";
+                });
+
+            }
+            else
+            {
+            
+            th = Int32.Parse(ttime[0]);
+            if (ttime.Count == 2)
+            {
+                tmin = (int)(Convert.ToDouble("." + ttime[1]) * 60);
+            }
+            else
+            {
+                tmin = 0;
+            }
+
+            if (th == 1)
+            {
+                hval = " hour ";
+
+            }
+            else
+            {
+                hval = " hours ";
+            }
+            if (tmin == 1)
+            {
+                tval = " minute ";
+            }
+            else
+            {
+                tval = " minutes ";
+            }
+            this.Dispatcher.Invoke(() =>
+            {
+                if (tmin == 0)
+                {
+                    timesince.Text = th.ToString() + hval + "ago";
+                }
+                else
+                {
+                    timesince.Text = th.ToString() + hval + tmin.ToString() + tval + "ago";
+                }
+                // timeremaining.Text = string.Format("{0:00}h {1:00}m", (int)tremaining.TotalHours, tremaining.Minutes);
+            });
+            
+        }
+            ttime.Clear();
+
+
+
+
+
+
+
+
+
             int secondsRemaining = power.BatteryLifeRemaining;
             if (secondsRemaining >= 0)
             {
+                
                 TimeSpan tremaining = TimeSpan.FromSeconds(secondsRemaining);
+             //   System.Windows.MessageBox.Show(tremaining.TotalHours.ToString());
                 if (tremaining.TotalHours < 1)
                 {
                      this.Dispatcher.Invoke(() =>
@@ -265,9 +339,40 @@ namespace Battery_Monitor
                 }
                 else
                 {
+                    ttime = tremaining.TotalHours.ToString().Split('.').ToList<string>();
+                    th = Int32.Parse(ttime[0]);
+                    if (ttime.Count == 2) {
+                        tmin = (int)(Convert.ToDouble("."+ttime[1])*60);
+                    } else
+                    {
+                        tmin = 0;
+                    }
+
+                   if (th == 1)
+                   {
+                      hval = " hour ";
+                        
+                    } else
+                    {
+                        hval = " hours ";
+                    }
+                    if (tmin == 1)
+                    {
+                        tval = " minute ";
+                    } else
+                    {
+                        tval = " minutes ";
+                    }
                     this.Dispatcher.Invoke(() =>
                     {
-                        timeremaining.Text = string.Format("{0:00}h {1:00}m", (int)tremaining.TotalHours, tremaining.Minutes);
+                        if (tmin == 0)
+                        {
+                            timeremaining.Text = th.ToString() + hval + "remaining";
+                        } else
+                        {
+                            timeremaining.Text = th.ToString() + hval + tmin.ToString() + tval + "remaining";
+                        }
+                       // timeremaining.Text = string.Format("{0:00}h {1:00}m", (int)tremaining.TotalHours, tremaining.Minutes);
                     });
                     
                 }
@@ -280,20 +385,27 @@ namespace Battery_Monitor
                 {
                     this.Dispatcher.Invoke(() =>
                     {
-                        timeremaining.Text = "Fully Charged";
+                        if (SystemInformation.PowerStatus.PowerLineStatus.ToString() == "Online")
+                        {
+                            timeremaining.Text = "Plugged In\nFully Charged";
+                        }
+                        else
+                        {
+                            timeremaining.Text = "Fully Charged";
+                        }
                     });
                     
                 } else
                 {
                     this.Dispatcher.Invoke(() =>
                     {
-                        timeremaining.Text = "Charging";
+                        timeremaining.Text = "Plugged In\nCharging";
                     });
                     
                 }
                 List<string> powerval2 = power.BatteryChargeStatus.ToString().Split(',').ToList<string>();
                 //System.Windows.MessageBox.Show(powerval2[1].ToString());
-                if (powerval2.Count == 1)
+                if (powerval2.Count == 1 && SystemInformation.PowerStatus.PowerLineStatus.ToString() != "Online")
                 {
                     this.Dispatcher.Invoke(() =>
                     {
@@ -301,13 +413,7 @@ namespace Battery_Monitor
                     });
                     
                 }
-                if (SystemInformation.PowerStatus.PowerLineStatus.ToString() == "Online")
-                {
-                    this.Dispatcher.Invoke(() =>
-                    {
-                        timeremaining.Text = "Fully Charged";
-                    });
-                }
+
             }
 
             // Battery Status

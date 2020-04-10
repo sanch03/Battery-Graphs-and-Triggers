@@ -1,0 +1,1 @@
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\AppPackages\Battery Monitor UWP_1.0.2.0_Debug_Test\Battery Monitor UWP_1.0.2.0_AnyCPU_Debug.msixbundle

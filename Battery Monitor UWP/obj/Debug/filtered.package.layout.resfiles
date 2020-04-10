@@ -1,0 +1,17 @@
+Battery Monitor\Battery Monitor.exe
+Battery Monitor\Battery Monitor.exe.config
+Battery Monitor\DocumentFormat.OpenXml.dll
+Battery Monitor\FluentWPF.dll
+Battery Monitor\LiveCharts.dll
+Battery Monitor\LiveCharts.Wpf.dll
+Battery Monitor\Newtonsoft.Json.dll
+Battery Monitor\System.IO.FileSystem.Primitives.dll
+Battery Monitor\System.IO.Packaging.dll
+Battery Monitor\System.Runtime.WindowsRuntime.dll
+Images\LockScreenLogo.scale-200.png
+Images\SplashScreen.scale-200.png
+Images\Square150x150Logo.scale-200.png
+Images\Square44x44Logo.scale-200.png
+Images\Square44x44Logo.targetsize-24_altform-unplated.png
+Images\StoreLogo.png
+Images\Wide310x150Logo.scale-200.png

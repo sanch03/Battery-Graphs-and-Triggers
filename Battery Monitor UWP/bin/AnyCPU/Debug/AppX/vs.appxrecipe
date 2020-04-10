@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-CS051N2</Machine>
+    <WindowsUser>sanch</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>557479d0-6871-4644-a9da-0460d33f0a6d</PackageIdentityName>
+    <PackageIdentityPublisher>CN=sanch</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\obj\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>
+    </WindowsSdkPath>
+    <LayoutDir>C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>A368228EF0CD32548EB51D3EE2FA38753D685F1B623E722D1FCC5162BA21F64D</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>557479d0-6871-4644-a9da-0460d33f0a6d_1.0.0.0_neutral__2k70crr6ea3ha</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>557479d0-6871-4644-a9da-0460d33f0a6d_2k70crr6ea3ha!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>557479d0-6871-4644-a9da-0460d33f0a6d</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=sanch</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-10T05:34:55.376</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\SplashScreen.scale-200.png">
+      <PackagePath>Images\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-10T05:11:55.913</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\LockScreenLogo.scale-200.png">
+      <PackagePath>Images\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2020-04-10T05:11:55.913</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square150x150Logo.scale-200.png">
+      <PackagePath>Images\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-10T05:11:55.913</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square44x44Logo.scale-200.png">
+      <PackagePath>Images\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-10T05:11:55.913</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-10T05:11:55.913</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\StoreLogo.png">
+      <PackagePath>Images\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-10T05:11:55.913</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Wide310x150Logo.scale-200.png">
+      <PackagePath>Images\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-10T05:11:55.913</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2020-04-10T05:34:55.313</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\packages\DocumentFormat.OpenXml.2.10.1\lib\net46\DocumentFormat.OpenXml.dll">
+      <PackagePath>Battery Monitor\DocumentFormat.OpenXml.dll</PackagePath>
+      <Modified>2020-02-28T08:59:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\packages\FluentWPF.0.8.0\lib\net45\FluentWPF.dll">
+      <PackagePath>Battery Monitor\FluentWPF.dll</PackagePath>
+      <Modified>2019-11-03T17:12:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll">
+      <PackagePath>Battery Monitor\LiveCharts.dll</PackagePath>
+      <Modified>2017-06-19T14:26:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll">
+      <PackagePath>Battery Monitor\LiveCharts.Wpf.dll</PackagePath>
+      <Modified>2017-06-19T14:26:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll">
+      <PackagePath>Battery Monitor\Newtonsoft.Json.dll</PackagePath>
+      <Modified>2018-11-27T07:07:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll">
+      <PackagePath>Battery Monitor\System.IO.FileSystem.Primitives.dll</PackagePath>
+      <Modified>2016-11-04T17:56:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\packages\System.IO.Packaging.4.7.0\lib\net46\System.IO.Packaging.dll">
+      <PackagePath>Battery Monitor\System.IO.Packaging.dll</PackagePath>
+      <Modified>2019-11-14T21:56:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Reference Assemblies\Microsoft\Framework\.NETCore\v4.5\System.Runtime.WindowsRuntime.dll">
+      <PackagePath>Battery Monitor\System.Runtime.WindowsRuntime.dll</PackagePath>
+      <Modified>2012-09-25T16:16:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor\bin\Debug\Battery Monitor.exe">
+      <PackagePath>Battery Monitor\Battery Monitor.exe</PackagePath>
+      <Modified>2020-04-10T05:34:54.684</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor\bin\Debug\Battery Monitor.exe.config">
+      <PackagePath>Battery Monitor\Battery Monitor.exe.config</PackagePath>
+      <Modified>2020-04-10T01:04:58.447</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

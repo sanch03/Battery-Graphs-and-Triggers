@@ -1,0 +1,36 @@
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\Battery Monitor\DocumentFormat.OpenXml.dll
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\Battery Monitor\FluentWPF.dll
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\Battery Monitor\LiveCharts.dll
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\Battery Monitor\LiveCharts.Wpf.dll
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\Battery Monitor\Newtonsoft.Json.dll
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\Battery Monitor\System.IO.FileSystem.Primitives.dll
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\Battery Monitor\System.IO.Packaging.dll
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\Battery Monitor\System.Runtime.WindowsRuntime.dll
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\Battery Monitor\LiveCharts.pdb
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\Battery Monitor\LiveCharts.Wpf.pdb
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\Battery Monitor\Newtonsoft.Json.pdb
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\Battery Monitor\Battery Monitor.exe
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\Battery Monitor\Battery Monitor.exe.config
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\Battery Monitor\Battery Monitor.pdb
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\resources.pri
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\AppxManifest.xml
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\Battery Monitor UWP.build.appxrecipe
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\obj\Debug\Battery Monitor UWP.wapprojAssemblyReference.cache
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\obj\Debug\Battery Monitor UWP.wapproj.CoreCompileInputs.cache
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\obj\Debug\priconfig.xml
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\obj\Debug\priconfig.xml.intermediate
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\obj\Debug\unfiltered.layout.resfiles
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\obj\Debug\unfiltered.layout.resfiles.intermediate
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\obj\Debug\filtered.layout.resfiles
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\obj\Debug\filtered.layout.resfiles.intermediate
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\obj\Debug\excluded.layout.resfiles
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\obj\Debug\excluded.layout.resfiles.intermediate
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\obj\Debug\resources.resfiles
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\obj\Debug\resources.resfiles.intermediate
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\obj\Debug\pri.resfiles
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\obj\Debug\pri.resfiles.intermediate
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\obj\Debug\qualifiers.txt
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\obj\Debug\qualifiers.txt.intermediate
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\obj\Debug\ProjectArchitectures.txt
+C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\obj\Debug\Battery Monitor UWP.wapproj.LastBuild.txt
