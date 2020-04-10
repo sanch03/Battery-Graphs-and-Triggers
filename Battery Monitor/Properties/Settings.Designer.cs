@@ -25,7 +25,7 @@ namespace Battery_Monitor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("na")]
+        [global::System.Configuration.DefaultSettingValueAttribute("[[0,0]]")]
         public string test {
             get {
                 return ((string)(this["test"]));

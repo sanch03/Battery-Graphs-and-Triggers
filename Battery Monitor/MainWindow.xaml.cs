@@ -29,18 +29,22 @@ namespace Battery_Monitor
     /// </summary>
     public partial class MainWindow : Window
     {
+
+
+
         static class lis
         {
+
             public static string output = Battery_Monitor.Properties.Settings.Default.test;
-            
             public static List<List<int>> matrix = JsonConvert.DeserializeObject<List<List<int>>>(output);
            // public static List<List<int>> matrix = new List<List<int>>();
             public static int final;
         }
         public MainWindow()
         {
-        InitializeComponent();
-          //  lis.matrix.Clear();
+            InitializeComponent();
+            //System.Windows.MessageBox.Show("Started");
+            //  lis.matrix.Clear();
             //string output = Battery_Monitor.Properties.Settings.Default.test;
             //List<List<int>> Product = JsonConvert.DeserializeObject<List<List<int>>>(output);
 
@@ -51,13 +55,14 @@ namespace Battery_Monitor
             RankGraph.Series = graph.Series;
 
 
-
+            
 
             Vis.counter = 0;
             PowerManager.RemainingChargePercentChanged += PowerManager_RemainingChargePercentChanged;
+            PowerManager.BatteryStatusChanged += PowerManager_RemainingChargePercentChanged;
+            PowerManager.EnergySaverStatusChanged += PowerManager_RemainingChargePercentChanged;
 
 
-            
 
 
         }
@@ -65,14 +70,28 @@ namespace Battery_Monitor
 
         void addtolist()
         {
+            if (lis.matrix[0][0] == 0)
+            {
+                lis.matrix.Clear();
+            }
+            //Battery_Monitor.Properties.Settings.Default.test = "[[0,0]]";
+            //Battery_Monitor.Properties.Settings.Default.Save();
             //System.Windows.MessageBox.Show(lis.output.ToString());
-           // System.Windows.MessageBox.Show(lis.matrix.Count.ToString());
+            // System.Windows.MessageBox.Show(lis.matrix.Count.ToString());
             TimeSpan t = DateTime.UtcNow - new DateTime(1970, 1, 1);
             int secondsSinceEpoch = (int)t.TotalSeconds;
 
-            int count = lis.matrix.Count;
+            int count2 = lis.matrix.Count;
             //System.Windows.MessageBox.Show(PowerManager.);
-            
+            if (lis.matrix.Count > 0)
+            {
+                if (lis.matrix[count2 - 1][1] >= 90 && lis.matrix[count2 - 1][1] > PowerManager.RemainingChargePercent)
+                {
+                    lis.matrix.Clear();
+                }
+            }
+            int count = lis.matrix.Count;
+
             lis.matrix.Add(new List<int>());
             lis.matrix[count].Add(secondsSinceEpoch);
             lis.matrix[count].Add(PowerManager.RemainingChargePercent);
@@ -82,11 +101,12 @@ namespace Battery_Monitor
             lis.final = secondsSinceEpoch+SystemInformation.PowerStatus.BatteryLifeRemaining;
 
             string output = JsonConvert.SerializeObject(lis.matrix);
-           // System.Windows.MessageBox.Show(output);
+            //System.Windows.MessageBox.Show(output);
             Battery_Monitor.Properties.Settings.Default.test = output;
             Battery_Monitor.Properties.Settings.Default.Save();
 
-
+            System.Diagnostics.Debug.WriteLine(output);
+            test();
         }
 
         static class graph
@@ -133,9 +153,9 @@ namespace Battery_Monitor
                 graph.Series[0].Values.Add(new ObservablePoint(x, y));
                 System.Diagnostics.Debug.WriteLine("x" + i.ToString() + "=" + x.ToString() + " y" + i.ToString() + "=" + y.ToString());
             }
-            
-            graph.Series[1].Values.Add(new ObservablePoint(lis.matrix[lis.matrix.Count-1][0], lis.matrix[lis.matrix.Count-1][1]));
-            graph.Series[1].Values.Add(new ObservablePoint(lis.final, 0));
+            List<string> powerval3 = SystemInformation.PowerStatus.BatteryChargeStatus.ToString().Split(',').ToList<string>();
+                graph.Series[1].Values.Add(new ObservablePoint(lis.matrix[lis.matrix.Count - 1][0], lis.matrix[lis.matrix.Count - 1][1]));
+                graph.Series[1].Values.Add(new ObservablePoint(lis.final, 0));
 
             //modifying any series values will also animate and update the chart
             //Series[3].Values.Add(5d);
@@ -221,13 +241,14 @@ namespace Battery_Monitor
         public void powerrefresh()
         {
             System.Diagnostics.Debug.WriteLine("power-ref");
-            //System.Windows.MessageBox.Show(Properties.Settings.Default.test); 
+           
 
 
             PowerStatus power = SystemInformation.PowerStatus;
             test();
             //Series[0].Values.Add(new ObservablePoint(160, 80));
             
+            //System.Windows.MessageBox.Show(power.PowerLineStatus.ToString());
 
             // Battery Remaining
             int secondsRemaining = power.BatteryLifeRemaining;
@@ -270,15 +291,75 @@ namespace Battery_Monitor
                     });
                     
                 }
+                List<string> powerval2 = power.BatteryChargeStatus.ToString().Split(',').ToList<string>();
+                //System.Windows.MessageBox.Show(powerval2[1].ToString());
+                if (powerval2.Count == 1)
+                {
+                    this.Dispatcher.Invoke(() =>
+                    {
+                        timeremaining.Text = "Discharging";
+                    });
+                    
+                }
+                if (SystemInformation.PowerStatus.PowerLineStatus.ToString() == "Online")
+                {
+                    this.Dispatcher.Invoke(() =>
+                    {
+                        timeremaining.Text = "Fully Charged";
+                    });
+                }
             }
 
             // Battery Status
             // percentage.Text = power.BatteryChargeStatus.ToString();
+            List<string> powerval = power.BatteryChargeStatus.ToString().Split(',').ToList<string>();
+            string[] nbat = { "\uE850", "\uE851", "\uE852", "\uE853", "\uE854", "\uE855", "\uE856", "\uE857", "\uE858", "\uE859", "\uE83F" };
+            string[] cbat = { "\uE85A", "\uE85B", "\uE85C", "\uE85D", "\uE85E", "\uE85F", "\uE860", "\uE861", "\uE862", "\uE83E", "\uEA93" };
+            string[] sbat = { "\uE863", "\uE864", "\uE865", "\uE866", "\uE867", "\uE868", "\uE869", "\uE86A", "\uE86B", "\uEA94", "\uEA95" };
+            string bval = "nbat";
+            //string[] fbat = nbat;
+            if (PowerManager.EnergySaverStatus.ToString() == "On")
+            {
+                bval = "sbat";
+                //fbat = sbat;
+            }
+            if (powerval.Count > 1 && powerval[1].ToString() == " Charging")
+            {
+                bval = "cbat";
+                
+            }
+            if (SystemInformation.PowerStatus.PowerLineStatus.ToString() == "Online")
+            {
+                bval = "cbat";
+            }
+
+                // System.Diagnostics.Debug.WriteLine(powerval[1].ToString());
+
+                decimal batper10 = PowerManager.RemainingChargePercent / 10;
+            int batlvl = Convert.ToInt32(Math.Floor(batper10));
+          //  System.Windows.MessageBox.Show(SystemInformation.PowerStatus.PowerLineStatus.ToString());
             this.Dispatcher.Invoke(() =>
             {
                 percentage.Text = PowerManager.RemainingChargePercent.ToString() + "%";
+                if (bval == "nbat")
+                {
+                    baticon.Text = nbat[batlvl];
+                }
+                else if (bval == "sbat")
+                {
+                    baticon.Text = sbat[batlvl];
+
+                }
+                else if (bval == "cbat")
+                {
+                    baticon.Text = cbat[batlvl];
+                }
+                
             });
+           // System.Windows.MessageBox.Show(PowerManager.EnergySaverStatus.ToString());
             
+           // List<string> powerval = power.BatteryChargeStatus.ToString().Split(',').ToList<string>();
+           // System.Windows.MessageBox.Show(powerval[1].ToString());
         }
 
         private void RichTextBox_TextChanged(object sender, TextChangedEventArgs e)

@@ -25,7 +25,7 @@
 
         <TextBlock x:Name="percentage" HorizontalAlignment="Left" Margin="91,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" Width="126" Height="71" FontFamily="Segoe UI Light"><Run Text="100"/><Run Text="%"/></TextBlock>
         <TextBlock x:Name="timeremaining" HorizontalAlignment="Left" Margin="216,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Text="Fully Charged" Width="124" RenderTransformOrigin="1,-0.731" Height="25"/>
-        <TextBlock x:Name="percentage_Copy" HorizontalAlignment="Left" Margin="5,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" FontFamily="Segoe MDL2 Assets" Width="58" Height="71"><Span FontSize="64"><Run Text="&#xEA93;"/></Span></TextBlock>
+        <TextBlock x:Name="baticon" HorizontalAlignment="Left" Margin="5,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="64" FontFamily="Segoe MDL2 Assets" Width="58" Height="71"><Span FontSize="64"><Run Text="&#xE8;"/></Span></TextBlock>
         <lvc:CartesianChart x:Name="RankGraph" Series="{Binding Series}" Margin="10,84,10,104" DisableAnimations="True">
             <lvc:CartesianChart.AxisY>
                 <lvc:Axis MaxValue="100" MinValue="0" Position="RightTop">
