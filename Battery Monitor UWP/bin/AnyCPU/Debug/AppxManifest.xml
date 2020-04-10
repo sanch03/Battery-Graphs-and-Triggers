@@ -9,7 +9,7 @@
   -->
   <Identity Name="557479d0-6871-4644-a9da-0460d33f0a6d" Publisher="CN=sanch" Version="1.0.2.0" ProcessorArchitecture="neutral" />
   <Properties>
-    <DisplayName>Battery Monitor UWP</DisplayName>
+    <DisplayName>Battery Monitor</DisplayName>
     <PublisherDisplayName>sanch</PublisherDisplayName>
     <Logo>Images\StoreLogo.png</Logo>
   </Properties>
@@ -22,7 +22,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="Battery Monitor\Battery Monitor.exe" EntryPoint="Windows.FullTrustApplication">
-      <uap:VisualElements DisplayName="Battery Monitor UWP" Description="Battery Monitor UWP" BackgroundColor="transparent" Square150x150Logo="Images\Square150x150Logo.png" Square44x44Logo="Images\Square44x44Logo.png">
+      <uap:VisualElements DisplayName="Battery Monitor" Description="Battery Monitor" BackgroundColor="transparent" Square150x150Logo="Images\Square150x150Logo.png" Square44x44Logo="Images\Square44x44Logo.png">
         <uap:DefaultTile Wide310x150Logo="Images\Wide310x150Logo.png" />
         <uap:SplashScreen Image="Images\SplashScreen.png" />
       </uap:VisualElements>

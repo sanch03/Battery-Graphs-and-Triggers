@@ -20,18 +20,18 @@
     <WindowsSdkPath>
     </WindowsSdkPath>
     <LayoutDir>C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>A368228EF0CD32548EB51D3EE2FA38753D685F1B623E722D1FCC5162BA21F64D</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>557479d0-6871-4644-a9da-0460d33f0a6d_1.0.0.0_neutral__2k70crr6ea3ha</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>A8BF6C3ED86EE4DDD6A9F3CA2B0E2F9A0ED494C8F41F7AC8FD1626EBD2DE1FFA</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>557479d0-6871-4644-a9da-0460d33f0a6d_1.0.2.0_neutral__2k70crr6ea3ha</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>557479d0-6871-4644-a9da-0460d33f0a6d_2k70crr6ea3ha!App</RegisteredUserModeAppID>
     <RegisteredPackageID>557479d0-6871-4644-a9da-0460d33f0a6d</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=sanch</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <RegisteredVersion>1.0.2.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-04-10T05:34:55.376</Modified>
+      <Modified>2020-04-10T08:31:25.316</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -71,7 +71,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-04-10T05:34:55.313</Modified>
+      <Modified>2020-04-10T08:28:38.545</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\packages\DocumentFormat.OpenXml.2.10.1\lib\net46\DocumentFormat.OpenXml.dll">
       <PackagePath>Battery Monitor\DocumentFormat.OpenXml.dll</PackagePath>
@@ -107,7 +107,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor\bin\Debug\Battery Monitor.exe">
       <PackagePath>Battery Monitor\Battery Monitor.exe</PackagePath>
-      <Modified>2020-04-10T05:34:54.684</Modified>
+      <Modified>2020-04-10T08:31:24.839</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor\bin\Debug\Battery Monitor.exe.config">
       <PackagePath>Battery Monitor\Battery Monitor.exe.config</PackagePath>
