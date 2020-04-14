@@ -23,8 +23,8 @@
     <Grid>
 
 
-        <TextBlock x:Name="percentage" HorizontalAlignment="Left" Margin="80,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" Width="126" Height="71" FontFamily="Segoe UI Light"><Run Text="100"/><Run Text="%"/></TextBlock>
-        <TextBlock x:Name="timeremaining" HorizontalAlignment="Left" Margin="179,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Text="1 hour and 46 minutes remaining" Width="139" RenderTransformOrigin="1,-0.731" Height="41" FontFamily="Segoe UI Semilight"/>
+        <TextBlock x:Name="percentage" HorizontalAlignment="Left" Margin="80,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" Width="126" Height="71" FontFamily="Segoe UI Light"><Run Text="???"/><Run Text="%"/></TextBlock>
+        <TextBlock x:Name="timeremaining" HorizontalAlignment="Left" Margin="200,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Width="139" RenderTransformOrigin="1,-0.731" Height="41" FontFamily="Segoe UI Semilight"><Run Text="?"/><Run Text=" hour and "/><Run Text="??"/><Run Text=" minutes remaining"/></TextBlock>
         <TextBlock x:Name="baticon" HorizontalAlignment="Left" Margin="5,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="64" FontFamily="Segoe MDL2 Assets" Width="58" Height="71"><Span FontSize="64"><Run Text="&#xE8;"/></Span></TextBlock>
         <lvc:CartesianChart x:Name="RankGraph" Series="{Binding Series}" Margin="10,84,10,104" DisableAnimations="True">
             <lvc:CartesianChart.AxisY>
@@ -39,7 +39,7 @@
                 <lvc:Axis ShowLabels="False"/>
             </lvc:CartesianChart.AxisX>
         </lvc:CartesianChart>
-        <TextBlock x:Name="timesince" HorizontalAlignment="Left" Margin="10,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Text="1 hour 26 minutes ago" Width="314" RenderTransformOrigin="1,-0.731" Height="21" FontFamily="Segoe UI Semilight"/>
+        <TextBlock x:Name="timesince" HorizontalAlignment="Left" Margin="10,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Width="314" RenderTransformOrigin="1,-0.731" Height="21" FontFamily="Segoe UI Semilight"><Run Text="?"/><Run Text=" hour "/><Run Text="??"/><Run Text=" minutes ago"/></TextBlock>
 
     </Grid>
 </Window>
