@@ -1,2 +1,6 @@
-MainPackage=C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\Battery Monitor UWP_1.0.2.0_AnyCPU_Debug.msix
-SymbolPackage=C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\obj\Debug\Symbols\Battery Monitor UWP_1.0.2.0_AnyCPU_Debug.appxsym
+MainPackage=C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Release\Battery Monitor UWP_1.0.5.0_AnyCPU.msix
+SymbolPackage=C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\obj\Release\Symbols\Battery Monitor UWP_1.0.5.0_AnyCPU.appxsym
+ResourcePack=C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Release\Battery Monitor UWP_1.0.5.0_scale-100.msix
+ResourcePack=C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Release\Battery Monitor UWP_1.0.5.0_scale-125.msix
+ResourcePack=C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Release\Battery Monitor UWP_1.0.5.0_scale-150.msix
+ResourcePack=C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Release\Battery Monitor UWP_1.0.5.0_scale-400.msix

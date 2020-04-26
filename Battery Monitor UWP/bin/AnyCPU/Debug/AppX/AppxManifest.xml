@@ -7,10 +7,10 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="557479d0-6871-4644-a9da-0460d33f0a6d" Publisher="CN=sanch" Version="1.0.2.0" ProcessorArchitecture="neutral" />
+  <Identity Name="32431ssappmkr.BatteryGraphsandTriggers" Publisher="CN=067BF5E5-A705-4046-BC2D-D248DC79D65F" Version="1.0.5.0" ProcessorArchitecture="neutral" />
   <Properties>
-    <DisplayName>Battery Monitor</DisplayName>
-    <PublisherDisplayName>sanch</PublisherDisplayName>
+    <DisplayName>Battery Graphs and Triggers</DisplayName>
+    <PublisherDisplayName>ssappmkr</PublisherDisplayName>
     <Logo>Images\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
@@ -22,8 +22,8 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="Battery Monitor\Battery Monitor.exe" EntryPoint="Windows.FullTrustApplication">
-      <uap:VisualElements DisplayName="Battery Monitor" Description="Battery Monitor" BackgroundColor="transparent" Square150x150Logo="Images\Square150x150Logo.png" Square44x44Logo="Images\Square44x44Logo.png">
-        <uap:DefaultTile Wide310x150Logo="Images\Wide310x150Logo.png" />
+      <uap:VisualElements DisplayName="Battery Graphs and Triggers" Description="Battery Monitor" BackgroundColor="white" Square150x150Logo="Images\Square150x150Logo.png" Square44x44Logo="Images\Square44x44Logo.png">
+        <uap:DefaultTile Wide310x150Logo="Images\Wide310x150Logo.png" Square71x71Logo="Images\SmallTile.png" Square310x310Logo="Images\LargeTile.png" />
         <uap:SplashScreen Image="Images\SplashScreen.png" />
       </uap:VisualElements>
     </Application>
@@ -37,7 +37,7 @@
     <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />
     <build:Item Name="VisualStudio" Version="16.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2019" />
-    <build:Item Name="OperatingSystem" Version="10.0.18362.1 (WinBuild.160101.0800)" />
+    <build:Item Name="OperatingSystem" Version="10.0.19041.1 (WinBuild.160101.0800)" />
     <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="16.0.29903.111" />
     <build:Item Name="ProjectGUID" Value="904c7ae4-f188-4702-9083-01f74469d3b4" />
     <build:Item Name="MakePri.exe" Version="10.0.18362.1 (WinBuild.160101.0800)" />

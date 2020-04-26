@@ -7,13 +7,13 @@
   IgnorableNamespaces="uap rescap">
 
   <Identity
-    Name="557479d0-6871-4644-a9da-0460d33f0a6d"
-    Publisher="CN=sanch"
-    Version="1.0.2.0" />
+    Name="32431ssappmkr.BatteryGraphsandTriggers"
+    Publisher="CN=067BF5E5-A705-4046-BC2D-D248DC79D65F"
+    Version="1.0.5.0" />
 
   <Properties>
-    <DisplayName>Battery Monitor</DisplayName>
-    <PublisherDisplayName>sanch</PublisherDisplayName>
+    <DisplayName>Battery Graphs and Triggers</DisplayName>
+    <PublisherDisplayName>ssappmkr</PublisherDisplayName>
     <Logo>Images\StoreLogo.png</Logo>
   </Properties>
 
@@ -31,12 +31,12 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="Battery Monitor"
+        DisplayName="Battery Graphs and Triggers"
         Description="Battery Monitor"
-        BackgroundColor="transparent"
+        BackgroundColor="white"
         Square150x150Logo="Images\Square150x150Logo.png"
         Square44x44Logo="Images\Square44x44Logo.png">
-        <uap:DefaultTile Wide310x150Logo="Images\Wide310x150Logo.png" />
+        <uap:DefaultTile Wide310x150Logo="Images\Wide310x150Logo.png"  Square71x71Logo="Images\SmallTile.png" Square310x310Logo="Images\LargeTile.png"/>
         <uap:SplashScreen Image="Images\SplashScreen.png" />
       </uap:VisualElements>
     </Application>

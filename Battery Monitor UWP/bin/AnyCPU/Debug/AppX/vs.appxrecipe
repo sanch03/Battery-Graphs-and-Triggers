@@ -8,8 +8,8 @@
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <PackageIdentityName>557479d0-6871-4644-a9da-0460d33f0a6d</PackageIdentityName>
-    <PackageIdentityPublisher>CN=sanch</PackageIdentityPublisher>
+    <PackageIdentityName>32431ssappmkr.BatteryGraphsandTriggers</PackageIdentityName>
+    <PackageIdentityPublisher>CN=067BF5E5-A705-4046-BC2D-D248DC79D65F</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\obj\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
@@ -20,58 +20,278 @@
     <WindowsSdkPath>
     </WindowsSdkPath>
     <LayoutDir>C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>A8BF6C3ED86EE4DDD6A9F3CA2B0E2F9A0ED494C8F41F7AC8FD1626EBD2DE1FFA</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>557479d0-6871-4644-a9da-0460d33f0a6d_1.0.2.0_neutral__2k70crr6ea3ha</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>557479d0-6871-4644-a9da-0460d33f0a6d_2k70crr6ea3ha!App</RegisteredUserModeAppID>
-    <RegisteredPackageID>557479d0-6871-4644-a9da-0460d33f0a6d</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=sanch</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.2.0</RegisteredVersion>
+    <RegisteredManifestChecksum>446277C50EEE49DDA02FFDC1BB04C94F574C92797156A7D7FF27B46FD4B58FDB</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>32431ssappmkr.BatteryGraphsandTriggers_1.0.5.0_neutral__kysdbg98n20ee</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>32431ssappmkr.BatteryGraphsandTriggers_kysdbg98n20ee!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>32431ssappmkr.BatteryGraphsandTriggers</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=067BF5E5-A705-4046-BC2D-D248DC79D65F</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.5.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-04-14T03:33:33.290</Modified>
+      <Modified>2020-04-26T10:27:32.081</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Wide310x150Logo.scale-400.png">
+      <PackagePath>Images\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.378</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\LargeTile.scale-100.png">
+      <PackagePath>Images\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.399</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\LargeTile.scale-125.png">
+      <PackagePath>Images\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.424</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\LargeTile.scale-150.png">
+      <PackagePath>Images\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.456</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\LargeTile.scale-200.png">
+      <PackagePath>Images\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.511</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\LargeTile.scale-400.png">
+      <PackagePath>Images\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.664</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\SmallTile.scale-100.png">
+      <PackagePath>Images\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.043</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\SmallTile.scale-125.png">
+      <PackagePath>Images\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.057</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\SmallTile.scale-150.png">
+      <PackagePath>Images\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.069</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\SmallTile.scale-200.png">
+      <PackagePath>Images\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.085</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\SmallTile.scale-400.png">
+      <PackagePath>Images\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.107</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\SplashScreen.scale-100.png">
+      <PackagePath>Images\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.971</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\SplashScreen.scale-125.png">
+      <PackagePath>Images\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:26.011</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\SplashScreen.scale-150.png">
+      <PackagePath>Images\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:26.059</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\SplashScreen.scale-200.png">
       <PackagePath>Images\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-04-10T05:11:55.913</Modified>
+      <Modified>2020-04-26T10:07:26.135</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\LockScreenLogo.scale-200.png">
       <PackagePath>Images\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2020-04-10T05:11:55.913</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\SplashScreen.scale-400.png">
+      <PackagePath>Images\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:26.410</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square150x150Logo.scale-100.png">
+      <PackagePath>Images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.121</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square150x150Logo.scale-125.png">
+      <PackagePath>Images\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.136</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square150x150Logo.scale-150.png">
+      <PackagePath>Images\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.152</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square150x150Logo.scale-200.png">
       <PackagePath>Images\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-04-10T05:11:55.913</Modified>
+      <Modified>2020-04-26T10:07:25.173</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square150x150Logo.scale-400.png">
+      <PackagePath>Images\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.220</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square44x44Logo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.861</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square44x44Logo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.873</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square44x44Logo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.943</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square44x44Logo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.884</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square44x44Logo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.896</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.799</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.850</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.820</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.830</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square44x44Logo.scale-100.png">
+      <PackagePath>Images\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.675</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square44x44Logo.scale-125.png">
+      <PackagePath>Images\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.686</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square44x44Logo.scale-150.png">
+      <PackagePath>Images\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.697</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square44x44Logo.scale-200.png">
       <PackagePath>Images\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-04-10T05:11:55.913</Modified>
+      <Modified>2020-04-26T10:07:25.710</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square44x44Logo.scale-400.png">
+      <PackagePath>Images\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.727</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.737</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.747</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-04-10T05:11:55.913</Modified>
+      <Modified>2020-04-26T10:07:25.809</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\StoreLogo.png">
-      <PackagePath>Images\StoreLogo.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-04-10T05:11:55.913</Modified>
+      <Modified>2020-04-26T10:07:25.789</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.757</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.768</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\StoreLogo.scale-100.png">
+      <PackagePath>Images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:26.423</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\StoreLogo.scale-125.png">
+      <PackagePath>Images\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:26.435</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\StoreLogo.scale-150.png">
+      <PackagePath>Images\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:26.447</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\StoreLogo.scale-200.png">
+      <PackagePath>Images\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:26.459</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\StoreLogo.scale-400.png">
+      <PackagePath>Images\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:26.478</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Wide310x150Logo.scale-100.png">
+      <PackagePath>Images\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.236</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Wide310x150Logo.scale-125.png">
+      <PackagePath>Images\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.254</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Wide310x150Logo.scale-150.png">
+      <PackagePath>Images\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-04-26T10:07:25.274</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\Images\Wide310x150Logo.scale-200.png">
       <PackagePath>Images\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-04-10T05:11:55.913</Modified>
+      <Modified>2020-04-26T10:07:25.301</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-04-10T08:28:38.545</Modified>
+      <Modified>2020-04-26T10:27:32.047</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\packages\DocumentFormat.OpenXml.2.10.1\lib\net46\DocumentFormat.OpenXml.dll">
       <PackagePath>Battery Monitor\DocumentFormat.OpenXml.dll</PackagePath>
@@ -107,7 +327,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor\bin\Debug\Battery Monitor.exe">
       <PackagePath>Battery Monitor\Battery Monitor.exe</PackagePath>
-      <Modified>2020-04-14T03:33:32.791</Modified>
+      <Modified>2020-04-26T10:27:31.380</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor\bin\Debug\Battery Monitor.exe.config">
       <PackagePath>Battery Monitor\Battery Monitor.exe.config</PackagePath>
