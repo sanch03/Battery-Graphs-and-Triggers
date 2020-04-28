@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Battery_Monitor"
         mc:Ignorable="d"
-        Title="Settings" Height="450" Width="800"
+        Title="Battery Graphs and Triggers" Height="450" Width="800"
         xmlns:fw="clr-namespace:SourceChord.FluentWPF;assembly=FluentWPF"
         fw:AcrylicWindow.Enabled="True"
         fw:AcrylicWindow.AcrylicWindowStyle="NoIcon"
