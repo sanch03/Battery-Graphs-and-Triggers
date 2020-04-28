@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DocumentFormat.OpenXml.Bibliography;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,6 +25,14 @@ namespace Battery_Monitor
             
             InitializeComponent();
             
+
+
+            
+
+        }
+        public void setest(string message)
+        {
+            System.Windows.MessageBox.Show(message);
         }
     }
 }

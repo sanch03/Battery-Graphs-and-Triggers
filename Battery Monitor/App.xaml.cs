@@ -63,7 +63,7 @@ namespace Battery_Monitor
             MainWindow.Closing += MainWindow_Closing;
 
 
-            _notifyIcon.Click += (s, args) => ShowMainWindow();
+            _notifyIcon.MouseDown += (s, args) => ShowMainWindow(s, args);
 
             //_notifyIcon.Icon = Battery_Monitor.Properties.Resources.ea93_Sm6_icon;
             _notifyIcon.Visible = true;
@@ -156,7 +156,9 @@ namespace Battery_Monitor
             _notifyIcon.ContextMenuStrip =
                 new ContextMenuStrip();
             // _notifyIcon.ContextMenuStrip.Items.Add("MainWindow...").Click += (s, e) => ShowMainWindow();
+            _notifyIcon.ContextMenuStrip.Items.Add("Settings").Click += (s, e) => opensettings();
             _notifyIcon.ContextMenuStrip.Items.Add("Exit").Click += (s, e) => ExitApplication();
+
         }
 
         private void ExitApplication()
@@ -169,17 +171,28 @@ namespace Battery_Monitor
             _notifyIcon = null;
         }
 
-        private void ShowMainWindow()
+        private void opensettings()
         {
-            if (MainWindow.IsVisible)
+            Settings sting = new Settings();
+            sting.Show();
+            sting.setest("test message");
+            
+        }
+        private void ShowMainWindow(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            if (e.Button.ToString() == "Left")
             {
-                if (MainWindow.WindowState == WindowState.Minimized) MainWindow.WindowState = WindowState.Normal;
-                MainWindow.Activate();
-            }
-            else
-            {
-                MainWindow.Show();
-                MainWindow.Activate();
+                //System.Windows.MessageBox.Show(e.Button.ToString());
+                if (MainWindow.IsVisible)
+                {
+                    if (MainWindow.WindowState == WindowState.Minimized) MainWindow.WindowState = WindowState.Normal;
+                    MainWindow.Activate();
+                }
+                else
+                {
+                    MainWindow.Show();
+                    MainWindow.Activate();
+                }
             }
         }
 

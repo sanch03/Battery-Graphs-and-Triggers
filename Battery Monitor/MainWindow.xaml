@@ -20,7 +20,7 @@
         AllowsTransparency="True"       
         xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         >
-    <Grid>
+    <Grid fw:PointerTracker.Enabled="True">
 
 
         <TextBlock x:Name="percentage" HorizontalAlignment="Left" Margin="80,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" Width="126" Height="71" FontFamily="Segoe UI Light"><Run Text="???"/><Run Text="%"/></TextBlock>
@@ -40,6 +40,24 @@
             </lvc:CartesianChart.AxisX>
         </lvc:CartesianChart>
         <TextBlock x:Name="timesince" HorizontalAlignment="Left" Margin="10,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Width="314" RenderTransformOrigin="1,-0.731" Height="21" FontFamily="Segoe UI Semilight"><Run Text="?"/><Run Text=" hour "/><Run Text="??"/><Run Text=" minutes ago"/></TextBlock>
+
+
+               
+
+        <Button Content="Trigger 1" HorizontalAlignment="Left" Margin="10,330,0,30" Width="75" Height="32"
+                Style="{StaticResource ButtonRevealStyle}" Click="Button_Click_1"/>
+        
+        <Button Content="Trigger 2" HorizontalAlignment="Left" Margin="98,330,0,30" Width="75" Height="32"
+                Style="{StaticResource ButtonRevealStyle}"/>
+        
+        <Button Content="Trigger 3" HorizontalAlignment="Left" Margin="186,330,0,30" Width="75" Height="32"
+            Style="{StaticResource ButtonRevealStyle}"/>
+        
+        <Button Content="Trigger 4" HorizontalAlignment="Left" Margin="275,330,0,30" Width="75" Height="32"
+            Style="{StaticResource ButtonRevealStyle}"/>
+
+
+
 
     </Grid>
 </Window>
