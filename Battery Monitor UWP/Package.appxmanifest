@@ -9,7 +9,7 @@
   <Identity
     Name="32431ssappmkr.BatteryGraphsandTriggers"
     Publisher="CN=067BF5E5-A705-4046-BC2D-D248DC79D65F"
-    Version="1.0.5.0" />
+    Version="1.0.6.0" />
 
   <Properties>
     <DisplayName>Battery Graphs and Triggers</DisplayName>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-CS051N2</Machine>
+    <Machine>DESKTOP-R18IKV5</Machine>
     <WindowsUser>sanch</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -20,18 +20,18 @@
     <WindowsSdkPath>
     </WindowsSdkPath>
     <LayoutDir>C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>446277C50EEE49DDA02FFDC1BB04C94F574C92797156A7D7FF27B46FD4B58FDB</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>32431ssappmkr.BatteryGraphsandTriggers_1.0.5.0_neutral__kysdbg98n20ee</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>331D031C32AF001046C9EA1833F974915CEA6F9EE6D42EE140C374087799F63C</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>32431ssappmkr.BatteryGraphsandTriggers_1.0.6.0_neutral__kysdbg98n20ee</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>32431ssappmkr.BatteryGraphsandTriggers_kysdbg98n20ee!App</RegisteredUserModeAppID>
     <RegisteredPackageID>32431ssappmkr.BatteryGraphsandTriggers</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=067BF5E5-A705-4046-BC2D-D248DC79D65F</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.5.0</RegisteredVersion>
+    <RegisteredVersion>1.0.6.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-04-26T10:27:32.081</Modified>
+      <Modified>2020-04-28T08:22:07.584</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -291,7 +291,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-04-26T10:27:32.047</Modified>
+      <Modified>2020-04-28T08:11:08.567</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\packages\DocumentFormat.OpenXml.2.10.1\lib\net46\DocumentFormat.OpenXml.dll">
       <PackagePath>Battery Monitor\DocumentFormat.OpenXml.dll</PackagePath>
@@ -323,11 +323,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Reference Assemblies\Microsoft\Framework\.NETCore\v4.5\System.Runtime.WindowsRuntime.dll">
       <PackagePath>Battery Monitor\System.Runtime.WindowsRuntime.dll</PackagePath>
-      <Modified>2012-09-25T16:16:08.000</Modified>
+      <Modified>2012-09-25T17:16:08.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor\bin\Debug\Battery Monitor.exe">
       <PackagePath>Battery Monitor\Battery Monitor.exe</PackagePath>
-      <Modified>2020-04-26T10:27:31.380</Modified>
+      <Modified>2020-04-28T08:22:06.798</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor\bin\Debug\Battery Monitor.exe.config">
       <PackagePath>Battery Monitor\Battery Monitor.exe.config</PackagePath>
