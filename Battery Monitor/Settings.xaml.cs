@@ -32,7 +32,17 @@ namespace Battery_Monitor
         }
         public void setest(string message)
         {
-            System.Windows.MessageBox.Show(message);
+            //Color.FromRgb(255, 255, 255);
+            // System.Windows.MessageBox.Show(message);
+            var tb = new TextBlock();
+            tb.Text = "hello";
+            //tb.Foreground = "white";
+            //tb.Width = 20;
+            
+            tb.Margin = new Thickness(20, 20, 20, 20);
+            gridtest.Children.Add(tb);
         }
+
+
     }
 }

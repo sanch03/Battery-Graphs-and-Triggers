@@ -31,7 +31,7 @@
     <AppXManifest Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor UWP\bin\AnyCPU\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-04-28T23:23:11.053</Modified>
+      <Modified>2020-05-07T23:44:45.503</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -327,7 +327,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor\bin\Debug\Battery Monitor.exe">
       <PackagePath>Battery Monitor\Battery Monitor.exe</PackagePath>
-      <Modified>2020-04-28T23:23:09.316</Modified>
+      <Modified>2020-05-07T23:44:44.971</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sanch\source\repos\battery-monitor\Battery Monitor\bin\Debug\Battery Monitor.exe.config">
       <PackagePath>Battery Monitor\Battery Monitor.exe.config</PackagePath>

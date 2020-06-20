@@ -12,10 +12,10 @@
         fw:AcrylicWindow.NoiseOpacity="0.01"
         fw:AcrylicWindow.TintOpacity="0.80"
         AllowsTransparency="True"       
-        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf" WindowStyle="None"
         >
     
-    <Grid>
-        
+    <Grid Name="gridtest">
+        <Label Content="Test" HorizontalAlignment="Left" Margin="218,127,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
